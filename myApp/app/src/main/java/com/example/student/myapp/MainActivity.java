@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -66,6 +67,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btnLogin:
+                if(userpass.getText().length()<6){
+                    Toast.makeText(this, "Ne valja " , Toast.LENGTH_LONG).show();
+                    userpass.setText("");
+                    return;
+                }
                 Intent intent = new Intent(this, HomePage.class);
                 intent.putExtra("usernameKey", username.getText().toString());
                 intent.putExtra("passKey", userpass.getText().toString());
