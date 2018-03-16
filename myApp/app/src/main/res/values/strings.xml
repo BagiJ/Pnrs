@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">myApp</string>
+    <string name="username">Username:</string>
+    <string name="password">Password:</string>
+    <string name="enter_username">Enter username</string>
+    <string name="log_in">Log in</string>
+    <string name="enter_password">Enter password</string>
+    <string name="btn_log_in">Log in</string>
+    <string name="user_pas">Username and Password:</string>
+    <string name="btn_back">Back</string>
+</resources>
